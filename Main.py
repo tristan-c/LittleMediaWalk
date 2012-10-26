@@ -18,7 +18,7 @@ passwd = config.get('config','passwd')
 srv = config.get('config','srv')
 player = config.get('config','player')
 
-parser = Parser.Parser(user,passwd,"%s" % srv,logger)
+parser = Parser.Parser(user,passwd,srv,logger)
 screen = Screen.Screen()
 
 try:
